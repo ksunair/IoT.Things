@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoT.GrainInterfaces", "IoT.GrainInterface\IoT.GrainInterfaces.csproj", "{8A269C51-5C2D-4651-88F3-8842139C22ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoT.GrainClasses", "IoT.GrainClasses\IoT.GrainClasses.csproj", "{9897329C-6EDE-4568-9C2F-F4F8EC57AFC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoT.TestSilo", "IoT.TestSilo\IoT.TestSilo.csproj", "{6F6AA971-8FFB-4112-A71B-B7A1B4C1DAA4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A269C51-5C2D-4651-88F3-8842139C22ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A269C51-5C2D-4651-88F3-8842139C22ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A269C51-5C2D-4651-88F3-8842139C22ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A269C51-5C2D-4651-88F3-8842139C22ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9897329C-6EDE-4568-9C2F-F4F8EC57AFC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9897329C-6EDE-4568-9C2F-F4F8EC57AFC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9897329C-6EDE-4568-9C2F-F4F8EC57AFC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9897329C-6EDE-4568-9C2F-F4F8EC57AFC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F6AA971-8FFB-4112-A71B-B7A1B4C1DAA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F6AA971-8FFB-4112-A71B-B7A1B4C1DAA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F6AA971-8FFB-4112-A71B-B7A1B4C1DAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F6AA971-8FFB-4112-A71B-B7A1B4C1DAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
