@@ -9,5 +9,6 @@ namespace IoT.GrainInterface
 	public interface IDeviceGrain : IGrainWithIntegerKey
     {
         Task SetTemperature(double value);
+        Task<double> GetTemperature();
     }
 }

@@ -6,20 +6,25 @@ using Orleans.Providers;
 
 namespace IoT.GrainClasses
 {
-    public interface IDeviceGrainState : IGrainState
+    public class DeviceGrainState
     {
-        double LastValue { get; set; }
+        public double LastValue { get; set; }
     }
 
-    [StorageProvider(ProviderName = "MemStore")]
-    public class DeviceGrain : Grain<IDeviceGrainState>, IDeviceGrain
+    [StorageProvider(ProviderName="MemoryStore")]
+    public class DeviceGrain : Grain<DeviceGrainState>, IDeviceGrain
     {
+        public Task<double> GetTemperature()
+        {
+            return Task.FromResult(State.LastValue);
+        }
 
         public override Task OnActivateAsync()
         {
             var id = this.GetPrimaryKeyLong();
             Console.WriteLine("Activated {0}", id);
-            Console.WriteLine("Last state value {0}", this.State.LastValue);
+            
+            //Console.WriteLine("Last state value {0}", State.LastValue);
             return base.OnActivateAsync();
         }
 
@@ -29,7 +34,7 @@ namespace IoT.GrainClasses
             {
                 Console.WriteLine("High Temperature recorded {0}", value);
             }
-            if (this.State.LastValue != value)
+            if (State.LastValue != value)
             {
                 this.State.LastValue = value;
                 await base.WriteStateAsync();

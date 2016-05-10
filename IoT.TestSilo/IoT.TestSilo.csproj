@@ -112,8 +112,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DevTestServerConfiguration.xml">
-      <SubType>Designer</SubType>
+    <Content Include="OrleansConfiguration.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
